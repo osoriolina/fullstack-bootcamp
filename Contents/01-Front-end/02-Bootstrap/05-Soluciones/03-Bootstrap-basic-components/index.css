@@ -1,0 +1,147 @@
+
+body {
+font-family: Roboto;
+background-color: #EDEDED;
+}
+
+.header__navbar {
+background-color: #ffffff;
+width: 100%;
+}
+
+.float__right {
+float: right;
+}
+
+.title__h1 {
+font-size: 25px;
+display:inline;
+}
+
+.subtitle__h2 {
+font-size: 15px;
+display:inline;
+}
+
+.dropdown__properties {
+display: block;
+}
+.header__username {
+background-color: #EDEDED;
+padding-top: 30px;
+padding-bottom: 30px;
+}
+
+
+.header__breadcrumb {
+background-color: #EDEDED;
+}
+
+.body__cards {
+background-color: #EDEDED;
+}
+
+.eye__properties {
+font-size: 50px;
+text-align: right;
+color: white;
+padding: 5px;
+}
+
+.cart__properties {
+font-size: 50px;
+text-align: right;
+color: white;
+padding: 5px;
+}
+
+.comment__properties {
+font-size: 50px;
+text-align: right;
+color: white;
+padding: 5px;
+}
+
+.user__properties {
+font-size: 50px;
+    text-align: right;
+    text-align: right;
+color: white;
+padding: 5px;
+}
+
+.footer__tables {
+background-color: #EDEDED;
+padding-bottom: 100px;
+}
+
+.table1__properties {
+    padding: 15px;
+    background: #ffffff;
+    border: 3px solid  #EDEDED;
+
+}
+
+.table2__properties {
+    padding: 8px;
+    background: #ffffff;
+    border: 3px solid  #EDEDED;
+
+}
+
+.card__text {
+    float: left;
+}
+
+.icon1__properties {
+    float: right;
+    background-color: #E37261;
+}
+
+.icon2__properties {
+    float: right;
+    background-color: #54A5F8;
+}
+
+.icon3__properties {
+    float: right;
+    background-color: #58B99D;
+}
+
+.icon4__properties {
+    float: right;
+    background-color: #F1BF4C;
+}
+
+.h4__size {
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.h5__size {
+    font-size: 5px;
+    color: lightskyblue;
+    text-align: right;
+}
+
+.align {
+    font-size: 20px;
+    display:inline;
+}
+
+.table__div i {
+    margin-right: 10px;
+}
+
+.badge__color {
+    background-color: #E37261;
+}
+
+.container__margin {
+    width: 90%;
+    max-width: 90%;
+}
+
+.table__justifyright {
+    display: inline;
+}
