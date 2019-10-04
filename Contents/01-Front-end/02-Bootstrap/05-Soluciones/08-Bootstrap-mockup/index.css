@@ -1,0 +1,47 @@
+.header__banner {
+  margin: 0px;
+  background-size: cover;
+  height: 600px; 
+  background-image: url("assets/banner.jpg");
+}
+
+.bg__body {
+    background-color: #5B9ADA;
+}
+
+.header__properties {
+    padding-top: 180px;
+    margin: 0;
+    color: white;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.icon__size {
+    size: 50px;
+}
+
+.center {
+    padding: 70px;
+}
+
+.footer__properties {
+background-color: #141414;
+color: white;
+padding: 40px;
+}
+
+.footer__properties i {
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+}
+
+.text__properties {
+    color: white;
+    font-size: 30px;
+}
+
+.card__properties {
+    padding: 40px;
+    color: white;
+}
