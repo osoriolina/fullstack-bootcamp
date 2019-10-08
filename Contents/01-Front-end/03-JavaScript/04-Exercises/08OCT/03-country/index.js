@@ -61,4 +61,4 @@ if (pais == "Spain") { //imprimir info de Spain, callingcodes, region, populatio
 
 }
  
-document.write(`${resultadoPais}`);
+document.write(`Su resultado es: ${resultadoPais}`);
