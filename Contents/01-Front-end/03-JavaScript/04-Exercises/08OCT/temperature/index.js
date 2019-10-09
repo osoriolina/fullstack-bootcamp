@@ -8,7 +8,7 @@ if (temperature == "fahrenheit") { //para convertir a celsius
     resultadoGrados = (grados - 32) * 5/9;
 } else {
     (temperature == "celsius")  //para convertir a celsius
-        resultadoGrados = (grados * 9/5) + 32;
+    resultadoGrados = (grados * 9/5) + 32;
 }
  
 document.write(`The temperature is ${resultadoGrados}`);
