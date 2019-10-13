@@ -9,7 +9,7 @@ pares de la palabra. */
 let letras = []; 
 let palabra = "pizarra";
 
-for (i = 0; i < palabra.length; i++) {
+for (let i = 0; i < palabra.length; i++) {
 
     let letra = palabra[i];
 
