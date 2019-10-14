@@ -38,3 +38,4 @@ for (let item in recuento) { //como encontrar el numero mas alto?
      masBajo[item] = recuento[item];
     }
  }
+
