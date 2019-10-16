@@ -33,6 +33,8 @@ switch (producto) {
     case "sangre de unicornio":
         document.write("0,5€");
         break;
+    default:
+                // code block
 }
 
     
