@@ -124,14 +124,13 @@ export class DataService {
   getSongById(id) {
 
     for (let song of this.songs) {
-      if (song.id == id) {
+      if (song['id'] == id) {
         this.songPlaying = song;
       }
     }
 
     console.log(this.songPlaying)
     return this.songPlaying;
-    
   }
 
 
