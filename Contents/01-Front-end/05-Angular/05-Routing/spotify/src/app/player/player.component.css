@@ -1,0 +1,222 @@
+body {
+    background-color: #181818;
+   
+}
+
+.bg_properties {
+   background: rgb(5,5,5);
+background: linear-gradient(0deg, rgba(5,5,5,1) 38%, rgba(44,44,45,1) 76%, rgba(58,59,59,1) 100%);
+   padding-right: 90px;
+   height: 800px;
+
+  
+}
+
+.sideBar_properties {
+    background-color: #050505;
+    color: white;
+   
+ 
+}
+
+.sideBarDiv_properties {
+    margin-bottom: 15px;
+}
+
+.sideBarText_properties {
+    float: right;
+    margin-right: 130px;
+    position: absolute;
+    top: 6px;
+    left: 90px;
+    font-size: 14px;
+    color: #A3A3A3;
+}
+
+.sidebarPlaylistText_properties {
+    float: right;
+    margin-right: 130px;
+    position: absolute;
+    top: 28px;
+    left: 45px;
+    font-size: 14px;
+    color: #A3A3A3;
+}
+
+.createListProperties {
+    float: right;
+    margin-right: 130px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    font-size: 14px;
+    color: #A3A3A3;
+}
+
+.sidebarPlaylistList_properties {
+    font-size: 14px;
+    color: #A3A3A3;
+    padding: 0%;
+    margin: 2px;
+    position: absolute;
+    top: 380px;
+    left: 40px;
+    height: 300px;
+}
+
+.sidebarPlaylistList_properties p {
+    margin-bottom: 0;
+}
+
+.fa_properties {
+    margin-left: 30px;
+    font-size: 25px;
+    color: #A3A3A3;
+    
+}
+
+.fa_CreateList_properties {
+    margin-left: 30px;
+    font-size: 40px;
+    color: #A3A3A3;
+    position: absolute;
+    top: 50px;
+    left: 12px;
+}
+
+.logo_properties {
+    width: 155px;
+    padding-left: 30px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+.navbarText__properties{
+    padding-right: 40px ;
+}
+
+.navbar_properties {
+    background-color: #181818;
+    margin-right: 100px;
+    
+}
+
+.navbar_properties a {
+    color: #A3A3A3;
+    font-size: 12px;
+    margin-top: 25px;
+    padding-right: 40px;
+    
+}
+
+.navbar_properties a:hover{
+    color: white;
+}
+.navbar_properties a:active {
+    color: yellow;
+}
+
+.title_properties {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 600px;
+}
+
+.subtitle {
+    color: #A3A3A3;
+    float: right;
+    position: absolute;
+    top: 63px;
+    right: 25px;
+    font-size: 15px;
+}
+
+.subtitle_2 {
+    color: #A3A3A3;
+}
+
+.card_properties {
+    border: none;
+    border-radius: 0% !important;
+    margin-left: 80px;
+    margin-top: 50px;
+
+}
+
+.img_properties {
+    border-radius: 0% !important;
+    width: 320px;
+}
+
+.cardBody_properties {
+    color: white;
+    text-align: center;
+    padding-left: 65px;
+    border: none;
+    background: rgb(5,5,5);
+    background: linear-gradient(0deg, rgba(5,5,5,1) 71%, rgba(44,44,45,1) 95%, rgba(58,59,59,1) 100%);
+}
+
+.player_card {
+    background: none;
+    color: white;
+    border: none;
+}
+
+.player_title {
+    font-size: 15px;
+}
+
+.player_subtitle {
+    font-style: 8px;
+}
+
+.player_properties {
+    background-color: #282828;
+    height: 100px;
+    width: 120%;
+    position: fixed;
+    bottom: 0%;
+}
+
+.player_elements {
+    color:#B3B3B3;
+    font-size: 20px;
+    margin-top: 30px;
+    padding-left: 30px;
+   
+}
+
+.audio_player {
+   color: white ;
+   size: 30px;
+}
+
+.play_btn {
+    background-color: #57B560;
+    border: none;
+    color: white; 
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.player_img {
+    width: 120px;
+    padding-left: 50px;
+    padding-top: 17px;
+}
+
+.table_properties {
+    width: 750px;
+    text-align: right;
+    margin-left: 250px;
+    margin-top: 60px;
+    color: white;
+    border: none;
+
+}
+
+.album_properties {
+    text-align: left;
+}

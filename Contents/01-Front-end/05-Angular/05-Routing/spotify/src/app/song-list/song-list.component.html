@@ -1,0 +1,250 @@
+<div class="row">
+    <div class="col-2 sideBar_properties">
+        <div class="row">
+            <div class="col-12 ">
+                <img class="logo_properties" src="../../assets/logo.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-home fa_properties"></i>
+                <p class="sideBarText_properties">Home</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-search fa_properties"></i>
+                <p class="sideBarText_properties">Search</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-book fa_properties"></i>
+                <p class="sideBarText_properties">Your Library</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <p class="sidebarPlaylistText_properties">PLAYLISTS</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-plus-square fa_CreateList_properties"></i>
+                <p class="createListProperties">Create playlist</p>
+            </div>
+        </div>
+
+
+        <div class="overflow-auto sidebarPlaylistList_properties">
+            <p>Rocksteady</p>
+            <p>Dany Records</p>
+            <p>Rock en Ñ</p>
+            <p>Discovered by Music</p>
+            <p>Liked from Radio</p>
+            <p>Estopa Melendi</p>
+            <p>Just Get Going</p>
+            <p>Frien de Semana</p>
+            <p>All Out 50s</p>
+            <p>Hey Big Spender</p>
+            <p>Boleros Romanticos</p>
+            <p>Discover Weekly</p>
+            <p>Positive Vibes</p>
+            <p>Wake Up and Smell the Coffee</p>
+            <p>Rocksteady</p>
+            <p>Dany Records</p>
+            <p>Rock en Ñ</p>
+            <p>Discovered by Music</p>
+            <p>Liked from Radio</p>
+            <p>Estopa Melendi</p>
+            <p>Just Get Going</p>
+            <p>Frien de Semana</p>
+            <p>All Out 50s</p>
+            <p>Hey Big Spender</p>
+            <p>Boleros Romanticos</p>
+            <p>Discover Weekly</p>
+            <p>Positive Vibes</p>
+            <p>Wake Up and Smell the Coffee</p>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="col-10 bg_properties">
+        <div class="row">
+            <div class="col-12">
+                <!-- navbar-->
+                <nav class="navbar navbar-expand-lg navbar-light navbar_properties">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link" href="#">FEATURED </a>
+                            <a class="nav-item nav-link" href="#">PODCASTS</a>
+                            <a class="nav-item nav-link" href="#">CHARTS</a>
+                            <a class="nav-item nav-link" href="#">GENRES & MOODS</a>
+                            <a class="nav-item nav-link" href="#">NEW RELEASES</a>
+                            <a class="nav-item nav-link" href="#">DISCOVER</a>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title_properties">Recently played</h1>
+                        <p class="subtitle">SEE ALL</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div *ngFor="let song of songs" class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="card card_properties" style="width: 13rem;">
+                            <div class="container_prop">
+                                <img routerLink="/song/{{song.id}}" src="../../assets/{{song.cover}}"
+                                    class="card-img-top img_properties" alt="...">
+                                <div class="middle">
+                                    <div class="text"><i class="far fa-play-circle"></i></div>
+                                </div>
+                            </div>
+                            <div class="card-body cardBody_properties">
+                                <h5 routerLink="/song/{{song.id}}" class="card-title">{{song.album}}</h5>
+                                <p routerLink="/song/{{song.id}}" class="card-text">{{song.artist}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title_properties">Your heavy rotation</h1>
+                        <h6 class="subtitle_2">The music you’ve had on repeat this month.</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div *ngFor="let song of songs" class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="card card_properties" style="width: 13rem;">
+                            <div class="container_prop">
+                                <img routerLink="/song/{{song.id}}" src="../../assets/{{song.cover}}"
+                                    class="card-img-top img_properties" alt="...">
+                                <div class="middle">
+                                    <div class="text"><i class="far fa-play-circle"></i></div>
+                                </div>
+                            </div>
+                            <div class="card-body cardBody_properties">
+                                <h5 routerLink="/song/{{song.id}}" class="card-title">{{song.album}}</h5>
+                                <p routerLink="/song/{{song.id}}" class="card-text">{{song.artist}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title_properties">Jump back in</h1>
+                        <h6 class="subtitle_2">Your top listens from the past few months.</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div *ngFor="let song of songs" class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="card card_properties" style="width: 13rem;">
+                            <div class="container_prop">
+                                <img routerLink="/song/{{song.id}}" src="../../assets/{{song.cover}}"
+                                    class="card-img-top img_properties" alt="...">
+                                <div class="middle">
+                                    <div class="text"><i class="far fa-play-circle"></i></div>
+                                </div>
+                            </div>
+                            <div class="card-body cardBody_properties">
+                                <h5 routerLink="/song/{{song.id}}" class="card-title">{{song.album}}</h5>
+                                <p routerLink="/song/{{song.id}}" class="card-text">{{song.artist}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="title_properties">Based on your recent listenings</h1>
+                        <h6 class="subtitle_2">Inspired by your recent activity.</h6>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div *ngFor="let song of songs" class="col-lg-2 col-md-3 col-sm-6">
+                        <div class="card card_properties" style="width: 13rem;">
+
+                            <div class="container_prop">
+                                <img routerLink="/song/{{song.id}}" src="../../assets/{{song.cover}}"
+                                    class="card-img-top img_properties" alt="...">
+                                <div class="middle">
+                                    <div class="text"><i class="far fa-play-circle"></i></div>
+                                </div>
+                            </div>
+
+
+                            <div class="card-body cardBody_properties">
+                                <h5 routerLink="/song/{{song.id}}" class="card-title">{{song.album}}</h5>
+                                <p routerLink="/song/{{song.id}}" class="card-text">{{song.artist}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div> <!-- cierre col 10-->
+
+</div> <!-- cierre row principal-->
+
+<div class="row player_properties d-none">
+    <div class="col-12">
+
+        <div class="row">
+            <div class="col-4">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="../../assets/{{songPlaying.cover}}" class="card-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <audio class="audio_properties" controls>
+                    <source src="../../assets/Don't Stop Me Now.mp3">
+                </audio>
+            </div>
+
+
+            <div class="col-4">
+
+            </div>
+
+        </div>
+    </div>
+</div>

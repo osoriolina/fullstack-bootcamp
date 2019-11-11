@@ -1,0 +1,168 @@
+<div class="row">
+    <div class="col-2 sideBar_properties">
+        <div class="row">
+            <div class="col-12 ">
+                <img routerLink="/home/" style="outline: none;" class="logo_properties" src="../../assets/logo.png">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-home fa_properties"></i>
+                <p class="sideBarText_properties">Home</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-search fa_properties"></i>
+                <p class="sideBarText_properties">Search</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-book fa_properties"></i>
+                <p class="sideBarText_properties">Your Library</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <p class="sidebarPlaylistText_properties">PLAYLISTS</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 sideBarDiv_properties">
+                <i class="fas fa-plus-square fa_CreateList_properties"></i>
+                <p class="createListProperties">Create playlist</p>
+            </div>
+        </div>
+
+
+        <div class="overflow-auto sidebarPlaylistList_properties">
+            <p>Rocksteady</p>
+            <p>Dany Records</p>
+            <p>Rock en Ñ</p>
+            <p>Discovered by Music</p>
+            <p>Liked from Radio</p>
+            <p>Estopa Melendi</p>
+            <p>Just Get Going</p>
+            <p>Frien de Semana</p>
+            <p>All Out 50s</p>
+            <p>Hey Big Spender</p>
+            <p>Boleros Romanticos</p>
+            <p>Discover Weekly</p>
+            <p>Positive Vibes</p>
+            <p>Wake Up and Smell the Coffee</p>
+            <p>Rocksteady</p>
+            <p>Dany Records</p>
+            <p>Rock en Ñ</p>
+            <p>Discovered by Music</p>
+            <p>Liked from Radio</p>
+            <p>Estopa Melendi</p>
+            <p>Just Get Going</p>
+            <p>Frien de Semana</p>
+            <p>All Out 50s</p>
+            <p>Hey Big Spender</p>
+            <p>Boleros Romanticos</p>
+            <p>Discover Weekly</p>
+            <p>Positive Vibes</p>
+            <p>Wake Up and Smell the Coffee</p>
+        </div>
+
+
+
+
+
+    </div>
+
+    <div class="col-10 bg_properties">
+        <div class="row">
+            <div class="col-12">
+
+
+                <div class="row">
+                    <div class="col-2">
+                        <div class="card card_properties" style="width: 13rem;">
+                            <img routerLink="/song/{{songPlaying.id}}" src="../../assets/{{songPlaying.cover}}"
+                                class="card-img-top img_properties" alt="...">
+                            <div class="card-body cardBody_properties">
+                                <h5 routerLink="/song/{{songPlaying.id}}" class="card-title">{{songPlaying.album}}</h5>
+                                <p routerLink="/song/{{songPlaying.id}}" class="card-text">{{songPlaying.artist}}</p>
+                                <button class="play_btn" onclick="document.getElementById('player').play()">Play</button> 
+                                <p style="font-size: 13px;">{{songPlaying.year}} • {{songPlaying.numOfSongs}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-lg-10 col-md-0 col-sm-0">
+                        <table class="table table-borderless table_properties">
+                            <tbody>
+                                <tr >
+                                    <th scope="row"><i class="fas fa-music"></i></th>
+                                    <td class="album_properties">{{songPlaying.song}}</td>
+                                    <td>{{songPlaying.length}}</td>
+                                </tr>
+                                <tr>
+                          
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div> <!-- cierre col 10-->
+
+</div> <!-- cierre row principal-->
+
+<div class="row player_properties">
+    <div class="col-12">
+
+        <div class="row">
+            <div class="col-4">
+                <div class="card mb-3 player_card" style="max-width: 520px;">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <img src="../../assets/{{songPlaying.cover}}" class="card-img player_img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title player_title">{{songPlaying.album}}</h5>
+                                <p class="card-text player_subtitle">{{songPlaying.artist}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-4">
+                <audio id="player" class="audio_properties">
+                    <source src="../../assets/{{songPlaying.playSong}}">
+                </audio>
+
+                <i class="far fa-play-circle player_elements" onclick="document.getElementById('player').play()"></i>
+                <i class="fas fa-pause player_elements" onclick="document.getElementById('player').pause()"></i>
+                <i class="fas fa-plus player_elements" onclick="document.getElementById('player').volume += 0.1"></i>
+                <i class="fas fa-minus player_elements" onclick="document.getElementById('player').volume -= 0.1"></i>
+            </div>
+
+
+            <div class="col-4">
+
+                <img style="width: 250px;" src="../../assets/img.png">
+
+            </div>
+
+        </div>
+    </div>
+</div>
